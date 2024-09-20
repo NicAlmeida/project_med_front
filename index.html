@@ -18,9 +18,11 @@
         <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet"> 
 
 
-          <!-- Link to CSS  -->
-          <link href="./styles/style.css" rel="stylesheet">
+        <!-- Link to CSS style  -->
+        <link href="./styles/style.css" rel="stylesheet">
 
+        <!-- Link to JS script -->
+        <script src="./js/script.js"></script>
         
 
     </head>
@@ -59,12 +61,12 @@
                             <li> <a href="#departamentos"> Departamentos </a> </li>
                             <li> <a href="#medicos"> Médicos </a> </li>
                             <li> <a href="#contatos"> Contatos </a> </li>
-                            <li class="dropdown"> <a href="#"> Mais opções </a>
+                            <li class="dropdown"> <a href="#"><span>Mais opções <i class="bi bi-chevron-down"></i> </span></a>
                                 <ul>
                                     <li><a href="#">Opção 1</a></li>
                                     <li><a href="#">Opção 2</a></li>
                                     <li><a href="#">Opção 3</a></li>
-                                    <li class="dropdown"><a href="#">Submenu</a>
+                                    <li class="dropdown"><a href="#"><span>Submenu <i class="bi bi-chevron-down"></i> </span></a>
                                         <ul>
                                             <li><a href="#">Submenu1</a></li>
                                             <li><a href="#">Submenu2</a></li>
@@ -90,7 +92,28 @@
 
         </header> <!-- fim header -->
 
-        <main> </main>
+        <main class="main">
+                
+           <!-- HEROO section -->
+           <section id="hero" class="hero section">
+
+            <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    
+              <!-- foto 01 / silde 01 -->
+              <div class="carousel-item active">
+                <img src="./img/hero-carousel/hero-carousel-1.jpg" alt="">
+    
+                <div class="container">
+                  <h2> Bem-Vindo á DailyMusic</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, non illo? Quis cumque ab impedit sit aliquam, reprehenderit distinctio, nemo numquam illum sapiente voluptate delectus. Iste esse omnis veniam totam!</p>
+                </div> <!-- fim container -->
+
+              </div> <!-- fim carousel --> 
+            </div>
+    
+          </section> <!-- fim section hero -->
+        
+        </main> <!-- fim main -->
 
         <footer>    </footer>
     </body>
