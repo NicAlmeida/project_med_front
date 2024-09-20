@@ -26,7 +26,7 @@
     </head>
     <body> 
         <header class="header" id="header" >
-            <div class="topbar d-flex align-items-center p-3 mb-2 bg-info text-dark" >
+            <div class="topbar d-flex align-items-center p-3 mb-2" >
                 <div class="container d-flex justify-content-center justify-content-md-between">
                    <div class="d-none d-md-flex align-items-center">
                         <i class="bi bi-clock" > 
@@ -51,23 +51,24 @@
                     </a>
 
                     <!-- Menu -->
-                    <nav>
+                    <nav class="navmenu" id="navmenu">
                         <ul>
-                            <li> <a href=""> Home </a> </li>
-                            <li> <a href=""> Sobre </a> </li>
-                            <li> <a href=""> Serviços </a> </li>
-                            <li> <a href=""> Departamentos </a> </li>
-                            <li> <a href=""> Médicos </a> </li>
-                            <li> <a href=""> Contatos </a> </li>
-                            <li> <a href=""> Mais opções </a>
+                            <li> <a href="#hero" class="active"> Home </a> </li>
+                            <li> <a href="#sobre"> Sobre </a> </li>
+                            <li> <a href="#servicos"> Serviços </a> </li>
+                            <li> <a href="#departamentos"> Departamentos </a> </li>
+                            <li> <a href="#medicos"> Médicos </a> </li>
+                            <li> <a href="#contatos"> Contatos </a> </li>
+                            <li class="dropdown"> <a href="#"> Mais opções </a>
                                 <ul>
-                                    <li>Opção 1</li>
-
-                                    <li> Submenu
+                                    <li><a href="#">Opção 1</a></li>
+                                    <li><a href="#">Opção 2</a></li>
+                                    <li><a href="#">Opção 3</a></li>
+                                    <li class="dropdown"><a href="#">Submenu</a>
                                         <ul>
-                                            <li>Submenu 1</li>
-                                            <li>Submenu 2</li>
-                                            <li>Submenu 3</li>
+                                            <li><a href="#">Submenu1</a></li>
+                                            <li><a href="#">Submenu2</a></li>
+                                            <li><a href="#">Submenu3</a></li>
                                         </ul>
                                     </li> <!-- fim submenu -->
                                 </ul>
@@ -89,16 +90,8 @@
 
         </header> <!-- fim header -->
 
-        <main>
-            <div>
-                <h1>Interface Web</h1>
-            </div>
-        </main>
+        <main> </main>
 
-        <footer>
-            <div>
-                <p class="text-center">nic</p>
-            </div>
-        </footer>
+        <footer>    </footer>
     </body>
 </html>
