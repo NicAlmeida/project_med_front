@@ -73,6 +73,7 @@ ul{
 }
 
 
+
 h1{
     color: var(--title);
     text-align: center;
@@ -88,7 +89,8 @@ h1{
 }
 
 .cta-btn:hover{
-    background-color: gray;
+    background-color: #046464;
+    transition: 0.3s;
 }
 
 
@@ -96,6 +98,7 @@ h1{
     
     .navmenu{
         padding: 0;
+        z-index: 4;
     }
 
     .navmenu ul{
@@ -214,7 +217,7 @@ h1{
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    border-top: 2px solid rgb(0, 0, 0);
+    border-top: 4px solid #047c7c;
     z-index: 3;
     margin-bottom: 50px;
 }
@@ -248,3 +251,35 @@ h1{
     }
 }
 
+.hero .carousel-control-prev-icon,
+.hero .carousel-control-next-icon{
+
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 26px;
+    border-radius: 50px;
+    transition: .3s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.hero .carousel-indicators{
+    cursor: pointer;
+    background-color: #047a7a;
+    width: 12px;
+    height: 12px;
+
+    opacity: 1;
+    overflow: hidden;
+    border: 0;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+
+.hero .carousel-indicators.active{
+    opacity: 1;
+    background-color: #047a7a;
+}
