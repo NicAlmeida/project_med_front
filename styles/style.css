@@ -226,6 +226,21 @@ h1{
     }
 }
 
+.hero h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    /* color: ; OPCIONAL */
+}
+
+.hero .carousel-control-prev{
+    justify-content: start;
+}
+
+.hero .carousel-control-next{
+    justify-content: end;
+}
+
 
 @media(max-height:500px), (max-width:500px){
     .hero .carousel{
