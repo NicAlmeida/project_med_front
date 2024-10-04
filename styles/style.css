@@ -388,3 +388,33 @@
   .accent-background{
     color: #3fbbc0;
   }
+
+
+
+/* Feature Services Section */
+.featured-service .service-item{
+    background-color: #fff;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    transition: all 0.3 ease-in-out;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+.featured-service .service-item .icon{
+    margin-bottom: 10px ;
+}
+
+.featured-service .service-item .icon i{
+    color: #3fbbc0;
+    font-size: 36px;
+    transition: ease-in-out 0.3s;
+}
+
+
+.featured-service .service-item a{
+    color: #3fbbc0;
+}
