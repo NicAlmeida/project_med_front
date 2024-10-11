@@ -5,7 +5,7 @@
 :root{
   --default-font:"Roboto", sans-serif;
   --heading-font:"Protest Strike", sans-serif ; 
-  --nav-font:"",  ;
+  --nav-font:"Playfair", serif;
 }
 
 
@@ -613,7 +613,7 @@ section, .section{
 }
 
 .pulsating-play-btn:hover:after{
-  border-left: 15px solid var(--accent-color);
+  border-left: 15px solid #fff;
   transform: scale(20);
 }
 
@@ -654,7 +654,59 @@ section, .section{
 .stats .stats-item p{
   padding: 0;
   margin: 0;
-  font-family: #000;
+  font-family: var(--default-font);
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 400;
+}
+
+
+.scroll-top{
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background-color: #3fbbc0;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.scroll-top i{
+  font-size: 24px;
+  color: whitesmoke;
+  line-height: 0;
+}
+
+.scroll-top.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.scroll-top:hover{
+  background: #37a3a7;
+}
+
+
+.scroll-top:hover i{
+  color: #ffffff;
+}
+
+/* Features */
+.features .features-image{
+  position: relative;
+  min-height: 400px;
+}
+
+.features .features-image img{
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
